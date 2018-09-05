@@ -1,0 +1,20 @@
+<html>
+<table border="1">
+  <thead>
+    <tr>
+      <th>品目</th>
+      <th>品名</th>
+      <th>在庫</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for context in queryset %}
+      <tr>
+        <td>{{ context.hinmoku }}</td>
+        <td>{{ context.hinmei }}</td>
+        <td>{{ context.zaiko }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</html>
